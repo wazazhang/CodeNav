@@ -8,7 +8,7 @@
     
     <DataTemplate DataType="{x:Type models:CodeRegionItem}">
         <Expander IsExpanded="{Binding IsExpanded}" Style="{StaticResource PlusMinusExpander}" ToolTip="{Binding Tooltip}">
-            <Expander.BorderBrush>
+            <!--<Expander.BorderBrush>
                 <VisualBrush>
                     <VisualBrush.Visual>
                         <Rectangle StrokeThickness="1"
@@ -19,7 +19,7 @@
                                    x:Name="Rectangle"/>
                     </VisualBrush.Visual>
                 </VisualBrush>
-            </Expander.BorderBrush>
+            </Expander.BorderBrush>-->
             <Expander.Header>
                 <TextBlock Text="{Binding Name}"
                            FontFamily="{Binding FontFamily}" 
@@ -39,11 +39,11 @@
             </ItemsControl>
         </Expander>
         
-        <DataTemplate.Triggers>
+        <!--<DataTemplate.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter TargetName="Rectangle" Property="Stroke" Value="SteelBlue"/>
             </Trigger>
-        </DataTemplate.Triggers>
+        </DataTemplate.Triggers>-->
     </DataTemplate>
 
 </ResourceDictionary>

@@ -20,7 +20,6 @@
 
             <Expander IsExpanded="{Binding IsExpanded}" Style="{StaticResource PlusMinusExpander}" 
                   Visibility="{Binding IgnoreVisibility}"
-                  BorderBrush="{Binding BorderBrush}"
                   HorizontalAlignment="Stretch" 
                   ToolTip="{Binding Tooltip}"
                   x:Name="Expander">

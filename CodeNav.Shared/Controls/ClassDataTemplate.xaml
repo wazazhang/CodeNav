@@ -9,8 +9,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <DataTemplate DataType="{x:Type models:CodeClassItem}">
-        <Expander IsExpanded="{Binding IsExpanded}" Style="{StaticResource PlusMinusExpander}" 
-                  BorderBrush="{Binding BorderBrush}"
+        <Expander IsExpanded="{Binding IsExpanded}" Style="{StaticResource PlusMinusExpander}"
                   HorizontalAlignment="Stretch" 
                   ToolTip="{Binding Tooltip}"
                   x:Name="Expander">
@@ -31,7 +30,7 @@
                     </TextBlock>
                 </StackPanel>
             </Expander.Header>
-            <ItemsControl ItemsSource="{Binding Members}" Background="Transparent" Margin="6,3,6,0">
+            <ItemsControl ItemsSource="{Binding Members}" Background="Transparent" Margin="22,3,6,0">
                 <ItemsControl.ItemContainerStyle>
                     <Style>
                         <Setter Property="FrameworkElement.Margin" Value="0,0,0,6"/>
